@@ -1,0 +1,65 @@
+# def square(numbers):
+#     print(f"square of numbers")
+#     for i in numbers:
+#         print(f"square of {i} {i**2}")
+# list_1 = [1,2,3,4,5]
+# square(list_1)
+
+
+# def cubes(numbers):
+#     print(f"cubes of numbers")
+#     for i in numbers:
+#         print(f"cubes of {i} {i**3}")
+# list_1 = [1,2,3,4,5]
+# cubes(list_1)
+
+
+
+import time
+def square(numbers):
+    print(f"square of numbers")
+    for i in numbers:
+        print(f"square of {i} {i**2}")
+        time.sleep(0.2)
+initial_time = time.time()
+list_1 = [1,2,3,4,5]
+square(list_1)
+print(f"time taken {time.time()-initial_time}")
+
+
+def cubes(numbers):
+    print(f"cubes of numbers")
+    for i in numbers:
+        print(f"cubes of {i} {i**3}")
+        time.sleep(0.2)
+initial_time = time.time()
+list_1 = [1,2,3,4,5]
+cubes(list_1)
+print(f"time taken {time.time()-initial_time}")
+
+
+
+
+
+# import threading
+# import time
+# def square(numbers):
+#     print(f"square numbers")
+#     for i in numbers:
+#         print(f"square of {i} {i**2}")
+#         time.sleep(0.2)
+# def cubes(numbers):
+#     print(f"cube numbers")
+#     for i in numbers:
+#         print(f"cubes of {i} {i**3}")
+#         time.sleep(0.2)
+# initial_time = time.time()
+# list_1 = [1,2,3,4,5]
+# t1 = threading.Thread(target=square,args=(list_1,))
+# t2 = threading.Thread(target=square,args=(list_1,))
+# t1.start()
+# t2.start()
+# t1.join()
+# t2.join()
+# print(f"time taken {time.time()-initial_time}")
+
